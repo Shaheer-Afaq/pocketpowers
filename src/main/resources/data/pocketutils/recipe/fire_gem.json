@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " / ",
-    "FAF",
-    " M "
+    "#/#",
+    "GAG",
+    "#M#"
   ],
   "key": {
+    "#": "minecraft:fire_charge",
     "/": "minecraft:blaze_rod",
-    "F": "minecraft:fire_charge",
+    "G": "minecraft:gold_block",
     "A": "minecraft:amethyst_shard",
     "M": "minecraft:magma_cream"
   },

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#T#",
+    "RAR",
+    "#E#"
+  ],
+  "key": {
+    "#": "minecraft:ghast_tear",
+    "T": "minecraft:totem_of_undying",
+    "R": "minecraft:redstone_block",
+    "A": "minecraft:amethyst_shard",
+    "E": "minecraft:enchanted_golden_apple"
+  },
+  "result": {
+    "id": "pocketutils:health_gem",
+    "count": 1
+  }
+}

@@ -1,15 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " # ",
-    "LAL",
-    " I "
+    "#N#",
+    "DAD",
+    "#L#"
   ],
   "key": {
-    "#": "minecraft:ender_eye",
-    "L": "minecraft:lapis_block",
+    "#": "minecraft:lapis_lazuli",
+    "N": "minecraft:nether_star",
+    "D": "minecraft:diamond_block",
     "A": "minecraft:amethyst_shard",
-    "I": "minecraft:lightning_rod"
+    "L": "minecraft:lightning_rod"
   },
   "result": {
     "id": "pocketutils:magic_gem",

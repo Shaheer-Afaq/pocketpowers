@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#B#",
+    "EAE",
+    "#D#"
+  ],
+  "key": {
+    "#": "minecraft:obsidian",
+    "B": "minecraft:beacon",
+    "E": "minecraft:emerald_block",
+    "A": "minecraft:amethyst_shard",
+    "D": "minecraft:diamond_pickaxe"
+  },
+  "result": {
+    "id": "pocketutils:mining_gem",
+    "count": 1
+  }
+}

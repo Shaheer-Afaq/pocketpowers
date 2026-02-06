@@ -14,19 +14,19 @@ import java.util.function.Function;
 public class ModItems {
 
      public static final Item HEALTH_GEM = register(
-            "health_gem",props -> new GemItem(props, MobEffects.HEALTH_BOOST, 1, "health"), new Item.Properties().stacksTo(1).fireResistant());
+            "health_gem",props -> new GemItem(props, MobEffects.HEALTH_BOOST, 1, "health", 600), new Item.Properties().stacksTo(1).fireResistant());
 
      public static final Item HASTE_GEM = register(
-            "mining_gem",props -> new GemItem(props, MobEffects.HASTE,1, "mining"), new Item.Properties().stacksTo(1).fireResistant());
+            "mining_gem",props -> new GemItem(props, MobEffects.HASTE,1, "mining", 600), new Item.Properties().stacksTo(1).fireResistant());
 
     public static final Item GRAVITY_GEM = register(
-            "gravity_gem",props -> new GemItem(props, null,0, "gravity"), new Item.Properties().stacksTo(1).fireResistant());
+            "gravity_gem",props -> new GemItem(props, null,0, "gravity", 500), new Item.Properties().stacksTo(1).fireResistant());
 
     public static final Item MAGIC_GEM = register(
-            "magic_gem",props -> new GemItem(props, null,0, "magic"), new Item.Properties().stacksTo(1).fireResistant().useCooldown(100));
+            "magic_gem",props -> new GemItem(props, null,0, "magic", 500), new Item.Properties().stacksTo(1).fireResistant().useCooldown(100));
 
     public static final Item FIRE_GEM = register(
-            "fire_gem",props -> new GemItem(props, MobEffects.FIRE_RESISTANCE,0, "fire"), new Item.Properties().stacksTo(1).fireResistant().useCooldown(160));
+            "fire_gem",props -> new GemItem(props, MobEffects.FIRE_RESISTANCE,0, "fire", 30), new Item.Properties().stacksTo(1).fireResistant().useCooldown(160));
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
