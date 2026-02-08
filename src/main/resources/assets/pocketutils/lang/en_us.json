@@ -4,5 +4,9 @@
   "item.pocketutils.gravity_gem": "Gravity Gem",
   "item.pocketutils.magic_gem": "Magic Gem",
   "item.pocketutils.fire_gem": "Fire Gem",
-  "item.pocketutils.gem": "Gem"
+  "item.pocketutils.health.tooltip": "\nPassive: 4 extra hearts. Dealing damage has a 20% \nchance of healing 30% of the damage dealt.\n\nAbility:\nRight-click (mainhand)\nShift Right-Click (offhand)\nRestores 5 hearts to the wielder and summons a ring \nof healing, restoring 3 hearts to nearby entites.\n\nCooldown: 25s",
+  "item.pocketutils.mining.tooltip": "\nPassive: Haste II\n\nAbility:\nRight-click (mainhand)\nShift Right-Click (offhand)\nUnleashes a 2X2 beam tearing \nthrough blocks in your sight\n\nCooldown: 20s",
+  "item.pocketutils.gravity.tooltip": "\nPassive: Immune to fall damage.\nTransfers 80% damage to nearby entities.\n\nAbility:\nRight-click (mainhand)\nShift Right-Click (offhand)\nLaunches you up vertically\n\nCooldown: 25s",
+  "item.pocketutils.magic.tooltip": "\nPassive: Immune to lighting and magic.\nDealing 10hp or more damage has a 10%\nchance of summoning lightning on the target.\n\nAbility:\nRight-click (mainhand)\nShift Right-Click (offhand)\nSummons a powerful, armor-piercing sonic boom\n\nCooldown: 25s",
+  "item.pocketutils.fire.tooltip": "\nPassive: Fire Resistance\n\nAbility:\nRight-click (mainhand)\nShift Right-Click (offhand)\nSummons a fiery ring in a 3-block radius.\nLights entities on fire and does knockback.\n\nCooldown: 15s"
 }

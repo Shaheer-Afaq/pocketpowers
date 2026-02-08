@@ -14,29 +14,30 @@ import java.util.function.Function;
 public class ModItems {
 
      public static final Item HEALTH_GEM = register(
-            "health_gem",props -> new GemItem(props, MobEffects.HEALTH_BOOST, 1, "health", 600), new Item.Properties().stacksTo(1).fireResistant());
+            "health_gem",properties -> new GemItem(properties, MobEffects.HEALTH_BOOST, 1, "health", 500), new Item.Properties().stacksTo(1).fireResistant());
 
-     public static final Item HASTE_GEM = register(
-            "mining_gem",props -> new GemItem(props, MobEffects.HASTE,1, "mining", 600), new Item.Properties().stacksTo(1).fireResistant());
+     public static final Item MINING_GEM = register(
+            "mining_gem",properties -> new GemItem(properties, MobEffects.HASTE,1, "mining", 400), new Item.Properties().stacksTo(1).fireResistant());
 
     public static final Item GRAVITY_GEM = register(
-            "gravity_gem",props -> new GemItem(props, null,0, "gravity", 500), new Item.Properties().stacksTo(1).fireResistant());
+            "gravity_gem",properties -> new GemItem(properties, null,0, "gravity", 500), new Item.Properties().stacksTo(1).fireResistant());
 
     public static final Item MAGIC_GEM = register(
-            "magic_gem",props -> new GemItem(props, null,0, "magic", 500), new Item.Properties().stacksTo(1).fireResistant().useCooldown(100));
+            "magic_gem",properties -> new GemItem(properties, null,0, "magic", 500), new Item.Properties().stacksTo(1).fireResistant().useCooldown(100));
 
     public static final Item FIRE_GEM = register(
-            "fire_gem",props -> new GemItem(props, MobEffects.FIRE_RESISTANCE,0, "fire", 30), new Item.Properties().stacksTo(1).fireResistant().useCooldown(160));
+            "fire_gem",properties -> new GemItem(properties, MobEffects.FIRE_RESISTANCE,0, "fire", 300), new Item.Properties().stacksTo(1).fireResistant().useCooldown(160));
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .register(itemGroup -> {
                     itemGroup.accept(ModItems.HEALTH_GEM);
-                    itemGroup.accept(ModItems.HASTE_GEM);
+                    itemGroup.accept(ModItems.MINING_GEM);
                     itemGroup.accept(ModItems.GRAVITY_GEM);
                     itemGroup.accept(ModItems.MAGIC_GEM);
                     itemGroup.accept(ModItems.FIRE_GEM);
                 });
+        GemEvents.initialize();
 
     }
     public static <GenericItem extends Item> GenericItem register(String name, Function<Item.Properties, GenericItem> itemFactory, Item.Properties settings) {
