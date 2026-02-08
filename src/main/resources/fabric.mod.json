@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "pocketutils",
 	"version": "${version}",
-	"name": "pocketutils",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Pocket Utils",
+	"description": "Adds powerful elemental gems that grant passive buffs and flashy abilities",
 	"authors": [
 		"Me!"
 	],
