@@ -22,13 +22,6 @@
 			"pocketutils.PocketutilsClient"
 		]
 	},
-	"mixins": [
-		"pocketutils.mixins.json",
-		{
-			"config": "pocketutils.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.11",
